@@ -21,11 +21,11 @@
 }
 
 .arrow_left::before {
-  content: url("../../../static/arrow_left.svg");
+  content: url("../static/arrow_left.svg");
   height: 20px;
 }
 
 .arrow_right::after {
-  content: url("../../../static/arrow_right.svg");
+  content: url("../static/arrow_right.svg");
   height: 20px;
 }

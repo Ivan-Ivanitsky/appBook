@@ -1249,6 +1249,7 @@
     async stateHook(path) {
       const { search, offset } = this.state;
       if (path === "search" || path === "offset") {
+        this.state.list = [];
         this.state.loading = true;
         const resp = await this.uploadBooks(search, offset * 10, 10);
         this.state.loading = false;
@@ -1286,7 +1287,7 @@
       this.app.append(main);
       this.app.append(new CardsList(this.appState, this.state).render()); // рендер BookList компонента
       this.headerRender(); // рендер Header компонента
-      if (this.state.numFound) {
+      if (this.state.list.length) {
         this.app.append(new Paginate(this.state).render());
       }
     }
