@@ -1,0 +1,34 @@
+.header{
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header__links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu__link{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    text-decoration: none;
+}
+
+.menu__link_active,.menu__link_active img{
+    color: var(--main--color);
+    filter: var(--main--color);
+}
+
+
+.menu__counter{
+    border:solid 1px var(--main--color);
+    border-radius: 50%;
+    display: flex;
+    padding: 8px;
+    line-height: 8px;
+}

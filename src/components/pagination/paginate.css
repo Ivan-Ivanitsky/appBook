@@ -1,0 +1,31 @@
+.paginate__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 10px 0 50px;
+}
+
+.arrow_left,
+.arrow_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #121212;
+  line-height: 20px;
+}
+
+.arrow_left::before {
+  content: url("../../../static/arrow_left.svg");
+  height: 20px;
+}
+
+.arrow_right::after {
+  content: url("../../../static/arrow_right.svg");
+  height: 20px;
+}
