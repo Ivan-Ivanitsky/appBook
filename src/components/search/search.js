@@ -19,7 +19,7 @@ export class Search extends DivComponent {
     this.el.innerHTML = `
     <div class='search__wrapper' >
         <input class='search__input' type="text" placeholder='Найти книгу или автора....' />
-        <img class='search__img' src="../static/search.svg" alt="search" />
+        <img class='search__img' src="./static/search.svg" alt="search" />
     </div>
     <button class='search__button'>
         <img src="./static/searchBtn.svg" alt="Btn" />
