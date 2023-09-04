@@ -13,16 +13,16 @@ export class Header extends DivComponent {
     this.el.innerHTML = `
     <div class ='header__logo'>
       <a class='logo' href="">
-          <img src="../static/Logo.svg" alt="Logo" />
+          <img src="./static/Logo.svg" alt="Logo" />
       </a>
     </div>
     <div class='header__links'>
         <a class = 'menu__link' href='#search'>
-            <img src="../static/search.svg" alt="search" />
+            <img src="./static/search.svg" alt="search" />
             Поиск книг
         </a>
         <a class = 'menu__link' href='#favorites'>
-            <img src="../static/favorites.svg" alt="favorites" />
+            <img src="./static/favorites.svg" alt="favorites" />
             Избранное
         </a>
         <div  class='menu__counter'>

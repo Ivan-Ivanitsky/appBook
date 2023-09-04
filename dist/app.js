@@ -1038,16 +1038,16 @@
       this.el.innerHTML = `
     <div class ='header__logo'>
       <a class='logo' href="">
-          <img src="../static/Logo.svg" alt="Logo" />
+          <img src="./static/Logo.svg" alt="Logo" />
       </a>
     </div>
     <div class='header__links'>
         <a class = 'menu__link' href='#search'>
-            <img src="../static/search.svg" alt="search" />
+            <img src="./static/search.svg" alt="search" />
             Поиск книг
         </a>
         <a class = 'menu__link' href='#favorites'>
-            <img src="../static/favorites.svg" alt="favorites" />
+            <img src="./static/favorites.svg" alt="favorites" />
             Избранное
         </a>
         <div  class='menu__counter'>
@@ -1086,7 +1086,7 @@
         <img class='search__img' src="../static/search.svg" alt="search" />
     </div>
     <button class='search__button'>
-        <img src="../static/searchBtn.svg" alt="Btn" />
+        <img src="./static/searchBtn.svg" alt="Btn" />
     </button>
     `;
       this.el
@@ -1115,7 +1115,7 @@
       );
 
       let img = !this.cardState.cover_edition_key
-        ? "../static/404.jpg"
+        ? "./static/404.jpg"
         : `https://covers.openlibrary.org/b/olid/${this.cardState.cover_edition_key}-M.jpg`;
 
       this.el.classList.add("card");
@@ -1142,8 +1142,8 @@
             <button class='btn ${favoritsExist ? "button__active" : ""}'>
                 ${
                   !favoritsExist
-                    ? ' <img src="../static/frame.svg" alt="Избранное" />'
-                    : '<img src="../static/frameWhite.svg" alt="Избранное" />'
+                    ? ' <img src="./static/frame.svg" alt="Избранное" />'
+                    : '<img src="./static/frameWhite.svg" alt="Избранное" />'
                 }
             </button>
         </div>`;

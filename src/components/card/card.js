@@ -13,7 +13,7 @@ export class Card extends DivComponent {
     );
 
     let img = !this.cardState.cover_edition_key
-      ? "../static/404.jpg"
+      ? "./static/404.jpg"
       : `https://covers.openlibrary.org/b/olid/${this.cardState.cover_edition_key}-M.jpg`;
 
     this.el.classList.add("card");
@@ -40,8 +40,8 @@ export class Card extends DivComponent {
             <button class='btn ${favoritsExist ? "button__active" : ""}'>
                 ${
                   !favoritsExist
-                    ? ' <img src="../static/frame.svg" alt="Избранное" />'
-                    : '<img src="../static/frameWhite.svg" alt="Избранное" />'
+                    ? ' <img src="./static/frame.svg" alt="Избранное" />'
+                    : '<img src="./static/frameWhite.svg" alt="Избранное" />'
                 }
             </button>
         </div>`;

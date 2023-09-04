@@ -22,7 +22,7 @@ export class Search extends DivComponent {
         <img class='search__img' src="../static/search.svg" alt="search" />
     </div>
     <button class='search__button'>
-        <img src="../static/searchBtn.svg" alt="Btn" />
+        <img src="./static/searchBtn.svg" alt="Btn" />
     </button>
     `;
     this.el
